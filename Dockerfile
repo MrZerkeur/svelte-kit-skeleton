@@ -1,11 +1,7 @@
 FROM node:20
 
-WORKDIR /
+RUN mkdir /app
 
-COPY . .
+WORKDIR /app
 
-RUN npm install
-
-EXPOSE 5000
-
-CMD ["npm", "run", "dev"]
+EXPOSE 8080
